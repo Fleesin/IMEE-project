@@ -1,0 +1,210 @@
+
+@font-face {
+
+    font-family: Roboto;
+    font-style: normal;
+    src: url("../Tipografía/Roboto-Light.ttf");
+}
+ 
+ @font-face {
+    font-family: Roboto-Black;
+    font-style: normal;
+    src: url("../Tipografía/Roboto-Medium.ttf");
+}
+ 
+.title {
+    margin-top: 5rem;
+}
+ .form-inscrip {
+    background-color: #fff;
+    border-color: aqua;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: #000;
+    font-family: 'Roboto-Black', sans-serif;;
+    font-size: 16px;
+    left: 53%;
+    height: 70%;
+    position: absolute;
+    padding: 20px;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+ 
+.form-inscrip h1 {
+    font-size: 21px;
+    font-weight: normal;
+    font-family: 'Roboto-Black', sans-serif;
+    margin: 0;
+    padding: 0 0 10px;
+    text-align: center;
+}
+ 
+.form-inscrip h3 {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Roboto-Black', sans-serif;
+    margin: 0;
+    padding: 0 0 10px;
+    text-align: center;
+}
+ 
+.form-inscrip label{
+    width: 25%;
+    color: #000;
+    font-size: 16px;
+    padding: 0px 3px;
+    height: 20px;
+}
+ 
+.form-inscrip select{
+    width: 7%;
+    border:1px solid #06c;
+    border-radius: 4px;
+    color: #000;
+    font-size: 16px;
+    padding: 0px 5px;
+    height: 22px;
+}
+ 
+.form-nombre,
+.form-infoE,
+.form-infoE2,
+.form-direccion,
+.form-InfM,
+.form-InfP,
+.form-InfA,
+.form-InfA2,
+.form-Ob {
+    display: flex;
+    padding: 5px;
+    height: 26px;
+}
+
+.form-nombre input[type="text"] {
+    width: 48.5%;
+    border:1px solid #06c;
+    border-radius: 4px;
+    color: #000;
+    font-size: 16px;
+    padding: 2px 5px;
+    height: 20px;
+}
+
+.form-infoE input[type="text"] {
+    width: 20.7%;
+    border:1px solid #06c;
+    border-radius: 4px;
+    color: #000;
+    font-size: 16px;
+    padding: 2px 5px;
+    height: 20px;
+}
+
+.form-inscrip input[type="date"] {
+    width: 17%;
+    border:1px solid #06c;
+    border-radius: 4px;
+    font-size: 10px;
+    font-family:'Roboto-Black', sans-serif;
+    color: #000;
+    font-size: 16px;
+    padding: 2px 5px;
+    height: 20px;
+}
+
+.form-direccion input[type="text"]{
+    width: 23.4%;
+    border:1px solid #06c;
+    border-radius: 4px;
+    color: #000;
+    font-size: 16px;
+    padding: 2px 5px;
+    height: 20px;
+}
+
+.form-infoE2 input[type="number"]{
+    width: 5.1%;
+    border:1px solid #06c;
+    border-radius: 4px;
+    color: #000;
+    font-size: 16px;
+    padding: 0px 5px;
+    height: 22px;
+}
+
+.form-infoE2 input[type="text"]{
+    width: 50%;
+    border:1px solid #06c;
+    border-radius: 4px;
+    color: #000;
+    font-size: 16px;
+    padding: 0px 5px;
+    height: 22px;
+}
+.form-infoE3{
+    width: 100%;
+    
+}
+
+.form-InfP input[type="text"],
+.form-InfM input[type="text"],
+.form-InfP input[type="email"],
+.form-InfM input[type="email"]{
+    width: 23.4%;
+    border:1px solid #06c;
+    border-radius: 4px;
+    color: #000;
+    font-size: 16px;
+    padding: 0px 5px;
+    height: 22px;
+}
+
+.form-InfA input[type="text"]{
+    width: 48.5%;
+    border:1px solid #06c;
+    border-radius: 4px;
+    color: #000;
+    font-size: 16px;
+    padding: 0px 5px;
+    height: 22px;
+}
+
+.form-InfA2 input[type="text"]{
+    width: 25%;
+    border:1px solid #06c;
+    border-radius: 4px;
+    color: #000;
+    font-size: 16px;
+    padding: 0px 5px;
+    height: 22px;
+}
+
+.form-Ob input[type="text"]{
+    width: 85%;
+    border:  none;
+    border-bottom: 1px solid #000;
+    color: #000;
+    font-size: 16px;
+    height: 20px;
+    outline: none;
+}
+.sub_label{
+    text-align: left;
+    padding: 5px;
+}
+footer {
+    background-color: #0a4d2e;
+    color: ghostwhite;
+    font-family: sans-serif;
+    font-size: 67%;
+    font-size-adjust: 12;
+    height: 10;
+    position: absolute;
+    text-align: center;
+    top: 86%;
+    transform: translate(0%, 50%);
+    width: 100%;
+}
+

@@ -1,0 +1,82 @@
+
+.register-box {
+	background-color: #fff;
+	border-color: aqua;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	box-sizing: border-box;
+	color: #000;
+	font-family: 'Roboto-Black', sans-serif;;
+	font-size: 16px;
+	left: 50%;
+	height: 450px;
+	padding: 50px 30px;
+	position: absolute;
+	top: 47%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+}
+
+.register-box h1 {
+	font-size: 25px;
+	font-weight: normal;
+	font-family: 'Roboto-Black', sans-serif;
+	margin: 0;
+	padding: 0 0 25px;
+	top: 5px;
+	text-align: center;
+}
+.register-box form{
+	width: 100%;
+}
+
+.register-box input {
+	margin-bottom: 15px;
+	width: 80%;
+}
+
+.register-box input[type="text"],
+.register-box input[type="password"] {
+	border:  none;
+	border-bottom: 1px solid #000;
+	color: #000;
+	font-size: 16px;
+	padding-left: 10px;
+	height: 20px;
+	outline: none;
+}
+
+.register-box input[type="submit"]{
+	background: #147c2d;
+	border:  5px;
+	border-radius: 20px;
+	color: #fff;
+	font-size: 16px;
+	width: 200px;
+	height: 40px;
+	outline: none;
+	align-content: center;
+}
+
+.register-box input[type="submit"]:hover{
+	background: #11612f;
+}
+
+.register-box i{
+	color:  #147c2d;
+	min-width: 22px;
+}
+
+.register-box a {
+	font-size: 13px;
+	color: #11612f;
+	left: 50px;
+	line-height: 20px;
+	text-decoration: none;
+}
+
+.register-box a:hover{
+	color: purple;
+}

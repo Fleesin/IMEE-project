@@ -1,0 +1,110 @@
+.lrbody {
+	font-family: sans-serif;
+	background: url("fondoblanco2.jpeg") no-repeat center top;
+	background-size: cover;
+	height: 77vh;
+}
+
+.login-image .imagen-aula{
+	background: none;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 0px;
+	left: 22%;
+	position: absolute;
+	width: 628px;
+}
+
+.login-box {
+	background-color: #fff;
+	border-color: aqua;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	box-sizing: border-box;
+	color: #000;
+	left: 50%;
+	height: 420px;
+	padding: 70px 30px;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 320px;
+}
+
+.login-box .icono {
+	border-width: 45%;
+	border-radius: 60%;
+	border-color: black;
+	border-width: 2px;
+	left: calc(50% - 50px);
+	height: 110px;
+	position: absolute;
+	top: -58px;
+	width: 110px;
+}
+
+.login-box h1 {
+	font-size: 20px;
+	font-weight: normal;
+	font-family: 'Roboto-Black', sans-serif;
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+}
+
+.login-box input {
+	margin-bottom: 25px;
+	width: 100%;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+	border:  none;
+	border-bottom: 1px solid #000;
+	color: #000;
+	font-size: 16px;
+	height: 20px;
+	outline: none;
+}
+
+.login-box input[type="submit"]{
+	background: #147c2d;
+	border:  5px;
+	border-radius: 20px;
+	color: #fff;
+	font-size: 16px;
+	height: 40px;
+	outline: none;
+}
+
+
+.login-box input[type="submit"]:hover {
+	background: #11612f;
+}
+
+.login-box a {
+	font-size: 13px;
+	color: #11612f;
+	line-height: 20px;
+	text-decoration: none;
+}
+
+.login-box a:hover{
+	color: purple;
+}
+
+footer {
+	background-color: #0a4d2e;
+	color: ghostwhite;
+	font-family: sans-serif;
+	font-size: 100%;
+	padding: 20px;
+	height: auto;
+	position: absolute;
+	text-align: center;
+	transform: translate(0%, 50%);
+	width: 100%;
+}
