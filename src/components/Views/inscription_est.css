@@ -1,21 +1,9 @@
 
-@font-face {
-
-    font-family: Roboto;
-    font-style: normal;
-    src: url("../Tipografía/Roboto-Light.ttf");
-}
- 
- @font-face {
-    font-family: Roboto-Black;
-    font-style: normal;
-    src: url("../Tipografía/Roboto-Medium.ttf");
-}
  
 .title {
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
- .form-inscrip {
+.form-inscrip {
     background-color: #fff;
     border-color: aqua;
     border-radius: 20px;
@@ -24,11 +12,10 @@
     font-family: 'Roboto-Black', sans-serif;;
     font-size: 16px;
     left: 53%;
-    height: 70%;
+    padding: 2rem;
     position: absolute;
-    padding: 20px;
     top: 45%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -45%);
     width: 70%;
 }
  
@@ -46,31 +33,35 @@
     font-weight: normal;
     font-family: 'Roboto-Black', sans-serif;
     margin: 0;
-    padding: 0 0 10px;
     text-align: center;
 }
  
 .form-inscrip label{
-    width: 25%;
     color: #000;
     font-size: 16px;
-    padding: 0px 3px;
-    height: 20px;
+    text-align: left;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.sub-label{
+    text-align: left;
+    padding-left: 0;
 }
  
 .form-inscrip select{
-    width: 7%;
+    width: 70px;
     border:1px solid #06c;
     border-radius: 4px;
     color: #000;
     font-size: 16px;
     padding: 0px 5px;
-    height: 22px;
+    height: 25px;
 }
  
 .form-nombre,
 .form-infoE,
 .form-infoE2,
+.form-infoE3,
 .form-direccion,
 .form-InfM,
 .form-InfP,
@@ -78,7 +69,7 @@
 .form-InfA2,
 .form-Ob {
     display: flex;
-    padding: 5px;
+    padding-top: 1%;
     height: 26px;
 }
 
@@ -93,7 +84,7 @@
 }
 
 .form-infoE input[type="text"] {
-    width: 20.7%;
+    width: 100%;
     border:1px solid #06c;
     border-radius: 4px;
     color: #000;
@@ -103,7 +94,7 @@
 }
 
 .form-inscrip input[type="date"] {
-    width: 17%;
+    width: 300px;
     border:1px solid #06c;
     border-radius: 4px;
     font-size: 10px;
@@ -125,7 +116,7 @@
 }
 
 .form-infoE2 input[type="number"]{
-    width: 5.1%;
+    width: 50px;
     border:1px solid #06c;
     border-radius: 4px;
     color: #000;
@@ -135,11 +126,12 @@
 }
 
 .form-infoE2 input[type="text"]{
-    width: 50%;
+    width: 100%;
     border:1px solid #06c;
     border-radius: 4px;
     color: #000;
     font-size: 16px;
+    padding-left: 0;
     padding: 0px 5px;
     height: 22px;
 }
@@ -172,7 +164,7 @@
 }
 
 .form-InfA2 input[type="text"]{
-    width: 25%;
+    width: 100%;
     border:1px solid #06c;
     border-radius: 4px;
     color: #000;
@@ -190,10 +182,6 @@
     height: 20px;
     outline: none;
 }
-.sub_label{
-    text-align: left;
-    padding: 5px;
-}
 footer {
     background-color: #0a4d2e;
     color: ghostwhite;
@@ -207,4 +195,3 @@ footer {
     transform: translate(0%, 50%);
     width: 100%;
 }
-

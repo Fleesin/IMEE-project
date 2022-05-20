@@ -24,7 +24,11 @@ const Inscription_est = () =>{
 						<option value="4">Otro</option>
 					</select>
 					<input type="text" maxlength="10" placeholder="Número de Identificación *" class="form-control" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
-					<label>Fecha de Nacimiento:</label>
+					
+				</div>
+
+				<div class="form-infoE">
+				<label>Fecha de Nacimiento:</label>
 					<input type="date" step="1" max="2018-03-31" min="2004-01-01"/>
 					<input type="text" placeholder="Nacionalidad *" required/>
 				</div>
@@ -44,7 +48,6 @@ const Inscription_est = () =>{
 					<input type="number" min="1" max="3" required/>
 					<label for="number">Puntaje del Sisbén:</label>
 					<input type="number" step="any" min="0" max="80"required/> */}
-					<label>E.P.S:</label>
 					<input type="text" placeholder="E.P.S. *" required/>
 
 				{/* <!--------------Info Sanguínea-----------> */}
@@ -74,43 +77,45 @@ const Inscription_est = () =>{
 				</div>
 
 				<div class="title"><b><h3>Información Familiar</h3></b></div>
-
+				<br/>		
 				{/* <!--------------Info del Padre-----------> */}
-				<div class="sub_label">
-					<b><label>Información del Padre:</label></b><br/>
+				<div class="sub-label">
+					<label>Información del Padre:</label>
 				</div>
 				
 				<div class="form-InfP">
-					<input type="text" placeholder="Nombre del Padre *" required/>
-					<input type="text" maxlength="10" placeholder="Número de Cédula *" class="form-control" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
-					<input type="email" placeholder="Correo Electrónico *" required/>
-					<input type="text" maxlength="10" placeholder="Teléfono / Celular*" class="form-control" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
+					<input type="text" placeholder="Nombre *" required/>
+					<input type="text" maxlength="10" placeholder="Cédula *" class="form-control" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
+					<input type="email" placeholder="E-mail*" required/>
+					<input type="text" maxlength="10" placeholder="Teléfono*" class="form-control" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
 				</div>
+				<br/>
 
 			{/* 	<!--------------Info de la Madre-----------> */}
-				<div class="sub_label">
-					<b><label>Información de la Madre:</label></b><br/>
+				<div class="sub-label">
+					<label>Información de la Madre:</label>
 				</div>
 				
 				<div class="form-InfM">
-					<input type="text" placeholder="Nombre de la Madre *" required/>
-					<input type="text" maxlength="10" placeholder="Número de Cédula *" class="form-control" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
-					<input type="email" placeholder="Correo Electrónico *" required/>
-					<input type="text" maxlength="10" placeholder="Teléfono / Celular*" class="form-control" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
+					<input type="text" placeholder="Nombre *" required/>
+					<input type="text" maxlength="10" placeholder="Cédula *" class="form-control" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
+					<input type="email" placeholder="E-mail *" required/>
+					<input type="text" maxlength="10" placeholder="Teléfono*" class="form-control" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
 				</div>
-				<div class="sub_label">
-				<b><label>Información del Acudiente:</label></b><br/>
+				<br/>
+				<div class="sub-label">
+					<label>Información del Acudiente:</label>
 				</div>
-				
+	
 				<div class="form-InfA">
-					<input type="text" placeholder="Nombre del Acudiente (Legalmente Establecido) *" required/>
-					<input type="text" maxlength="10" placeholder="Número de Cédula *" class="form-control" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
+					<input type="text" placeholder="Nombre (Legalmente Establecido) *" required/>
+					<input type="text" maxlength="10" placeholder="Cédula *" class="form-control" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
+					<input type="text" maxlength="10" placeholder="Teléfono *" class="form-control" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
 				</div>
 				<div class="form-InfA2">
 					<input type="text" placeholder="Dirección *" required/>
 					<label>Fecha de Nacimiento:</label>
 					<input type="date" step="1" max="2004-01-01"/>
-					<input type="text" maxlength="10" placeholder="Teléfono / Celular *" class="form-control" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
 				</div>
 
 				<div class="form-Ob">

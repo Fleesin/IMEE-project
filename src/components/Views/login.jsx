@@ -10,10 +10,15 @@ const Login = () =>{
                 <img className="icono" src="user-icon.png" />
                     <h1>Iniciar Sesión</h1><br/>
                     <form action="/home">
-                        <label for="username">Usuario</label>
+                        <div class="sub-label">
+                            <label for="username">Usuario</label>
+                        </div>
+                        
                         <input type="text" placeholder="Ingresar nombre de Usuario" required/><br/>
-
-                        <label for="password">Contraseña</label>
+                        <div class="sub-label">
+                            <label for="password">Contraseña</label>
+                        </div>
+                        
                         <input type="password" placeholder="Ingresar contraseña" required/>
 
                         <input  type="submit" value="Ingresar" /><br/><br/>

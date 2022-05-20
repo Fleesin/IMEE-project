@@ -1,0 +1,101 @@
+
+ body {
+     margin: 0;
+     padding: 0;
+     background: url("./fondoblanco2.jpeg") no-repeat center top;
+     background-size: cover;
+     height: 100vh;
+ }
+ 
+ .form{
+     padding: 2%;
+ }
+ .sub-label{
+     margin-top: 10px;
+     text-align: left;
+ }
+
+ .form-regInst label{
+     font-weight: bold;
+     width: 30%;
+     margin-top: 13px;
+     text-align: center;
+ }
+ 
+ .form-regInst {
+     background-color: #fff;
+     border-color: aqua;
+     border-radius: 20px;
+     box-sizing: border-box;
+     color: #000;
+     font-family: 'Roboto-Black', sans-serif;;
+     font-size: 16px;
+     left: 53%;
+     height: 480px;
+     position: absolute;
+     padding: 20px;
+     top: 45%;
+     transform: translate(-50%, -50%);
+     width: 70%;
+ }
+ 
+ .form-regInst h1 {
+     font-size: 21px;
+     font-weight: normal;
+     font-family: 'Roboto-Black', sans-serif;
+     margin: 0;
+     padding: 0 0 10px;
+     text-align: center;
+ }
+
+ .text{
+     display: flex;
+ }
+ 
+ .form-regInst select{
+     width: 100px;
+     border:1px solid #06c;
+     border-radius: 4px;
+     margin-top: 10px;
+     color: #000;
+     font-size: 16px;
+     padding: 0px 5px;
+     height: 26px;
+ }
+ 
+ .form-regInst input[type="text"] {
+     
+     width: 100%;
+     border:1px solid #06c;
+     border-radius: 4px;
+     color: #000;
+     font-size: 16px;
+     margin-top: 10px;
+     padding: 2px 5px 5px;
+     height: 20px;
+ }
+ 
+ .form-regInst input[type="email"]{
+     width: 100%;
+     border:1px solid #06c;
+     border-radius: 4px;
+     margin-top: 10px;
+     color: #000;
+     font-size: 16px;
+     padding: 0px 5px;
+     height: 22px;
+ }
+ 
+ footer {
+     background-color: #0a4d2e;
+     color: ghostwhite;
+     font-family: sans-serif;
+     font-size: 67%;
+     font-size-adjust: 12;
+     height: 10;
+     position: absolute;
+     text-align: center;
+     top: 86%;
+     transform: translate(0%, 50%);
+     width: 100%;
+ }

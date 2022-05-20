@@ -1,8 +1,9 @@
 .lrbody {
+	padding-top: 0;
 	font-family: sans-serif;
 	background: url("fondoblanco2.jpeg") no-repeat center top;
 	background-size: cover;
-	height: 77vh;
+	height: 80vh;
 }
 
 .login-image .imagen-aula{
@@ -14,6 +15,9 @@
 	left: 22%;
 	position: absolute;
 	width: 628px;
+}
+.sub-label{
+	text-align: left;
 }
 
 .login-box {
@@ -101,10 +105,9 @@ footer {
 	color: ghostwhite;
 	font-family: sans-serif;
 	font-size: 100%;
-	padding: 20px;
+	padding: 0.86% 0;
 	height: auto;
 	position: absolute;
 	text-align: center;
-	transform: translate(0%, 50%);
-	width: 100%;
+
 }
