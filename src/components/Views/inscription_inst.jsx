@@ -3,7 +3,7 @@ import './inscription_inst.css';
 
 const Inscription_inst =()=>{
     return(
-        <body>
+        <body class="lrbody">
             <div class="form-regInst">
                 <h1>Formulario de Registro Institución</h1>
                 <form>
@@ -70,7 +70,6 @@ const Inscription_inst =()=>{
                     </div>
                 </form>
             </div>
-            
         </body>
     )
 }
