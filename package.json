@@ -1,4 +1,3 @@
-
 {
   "name": "imee-project",
   "private": true,
@@ -10,12 +9,11 @@
   },
   "dependencies": {
     "react": "^18.0.0",
-    "react-router-dom": "^6.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
-    "@types/react-router-dom": "6",
     "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react": "^1.3.0",
     "vite": "^2.9.9"
