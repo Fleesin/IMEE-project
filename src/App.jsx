@@ -15,7 +15,9 @@ function App() {
       <BrowserRouter>
         <Navbar/>
         <Routes>
-            <Route path='/' element={<Login/>}/>
+            <Route path='/' element={<App/>}/>
+            <Route index element={<Home />} />
+            <Route path='login' element={<Login/>}/>
             <Route path='register' element={<Register/>}/>
             <Route path='inscription_est' element={<Inscription_est/>}/>
             <Route path='inscription_inst' element={<Inscription_inst/>}/>
