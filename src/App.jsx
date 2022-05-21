@@ -7,6 +7,7 @@ import Inscription_est from './components/Views/inscription_est.jsx'
 import Inscription_inst from './components/Views/inscription_inst.jsx'
 import User_type from './components/Views/user_type.jsx'
 import Home from './components/Views/Home.jsx'
+import Footer from './components/Footer/footer'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
             <Route path='inscription_inst' element={<Inscription_inst/>}/>
             <Route path='user_type' element={<User_type/>}/>
         </Routes>
+        <Footer/>
       </BrowserRouter> 
     </div>
   )

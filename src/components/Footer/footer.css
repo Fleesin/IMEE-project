@@ -1,0 +1,11 @@
+.footers {
+	background-color: #0a4d2e;
+	color: ghostwhite;
+    padding: 1rem;
+    bottom: 0;
+    height: auto;
+	font-family: sans-serif;
+    position: static;
+	font-size: 100%;
+    z-index: 1;
+}

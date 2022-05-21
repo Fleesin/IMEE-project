@@ -17,14 +17,6 @@ const User_type = () =>{
                     <div class="round-button"><div class="round-button-circle"><a href="/inscription_inst" class="round-button"><i class="fa-solid fa-school fa-3x"/><br/><br/>Institución</a></div></div>
                 </div>
             </body>
-        <footer>
-            
-            <p>
-                IMEE (Inscripción de Matrículas Estudiantiles Escolares) <br/>
-                Universidad de Cartagena<br/>
-                Ivonne Núñez / Jean Quintana / Camilo Mendoza
-            </p>
-        </footer>
         </>
     )
 }

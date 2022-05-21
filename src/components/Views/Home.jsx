@@ -10,13 +10,6 @@ const Home = () =>{
                     HOME
                 </div>
             </body>
-        <footer>
-            <p>
-                IMEE (Inscripción de Matrículas Estudiantiles Escolares) <br/>
-                Universidad de Cartagena<br/>
-                Ivonne Núñez / Jean Quintana / Camilo Mendoza
-            </p>
-        </footer>
         </>
     )
 }

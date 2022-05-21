@@ -181,19 +181,7 @@
     height: 20px;
     outline: none;
 }
-footer {
-    background-color: #0a4d2e;
-    color: ghostwhite;
-    font-family: sans-serif;
-    font-size: 67%;
-    font-size-adjust: 12;
-    height: 10;
-    position: absolute;
-    text-align: center;
-    top: 86%;
-    transform: translate(0%, 50%);
-    width: 100%;
-}
+
 
 
 @media screen and (max-width:634px) {

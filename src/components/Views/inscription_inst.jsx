@@ -70,15 +70,7 @@ const Inscription_inst =()=>{
                     </div>
                 </form>
             </div>
-            <div class="footer">	
-                <footer>
-                    <p>
-                        IMEE (Inscripción de Matrículas Estudiantiles Escolares) <br/>
-                        Universidad de Cartagena<br/>
-                        Ivonne Núñez / Jean Quintana / Camilo Mendoza
-                    </p>
-                </footer>
-            </div>
+            
         </body>
     )
 }

@@ -7,7 +7,7 @@ const Register = () => {
 
     return (
     
-        <><body>
+        <><body class="lrbody">
             <div class="register-box">
                 <h1>Registrate</h1>
                 <form action="/user_type">
@@ -31,15 +31,7 @@ const Register = () => {
                     <a href="/login">¿Ya tiene una Cuenta? Inicia Sesión</a>
                 </form>
             </div>
-
         </body>
-        <footer>
-            <p>
-                IMEE (Inscripción de Matrículas Estudiantiles Escolares) <br />
-                Universidad de Cartagena<br/>
-                Ivonne Núñez / Jean Quintana / Camilo Mendoza
-            </p>
-        </footer>
         
         </> 
     
