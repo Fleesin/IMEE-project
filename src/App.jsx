@@ -1,12 +1,12 @@
 import './App.css'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
-import  Navbar  from './components/Navbar/Navbar'
-import  Login  from './components/Views/login'
-import Register from './components/Views/register'
-import Inscription_est from './components/Views/inscription_est'
-import Inscription_inst from './components/Views/inscription_inst'
-import User_type from './components/Views/user_type'
-import Home from './components/Views/Home'
+import  Navbar  from './components/Navbar/Navbar.jsx'
+import  Login  from './components/Views/login.jsx'
+import Register from './components/Views/register.jsx'
+import Inscription_est from './components/Views/inscription_est.jsx'
+import Inscription_inst from './components/Views/inscription_inst.jsx'
+import User_type from './components/Views/user_type.jsx'
+import Home from './components/Views/Home.jsx'
 
 function App() {
 
