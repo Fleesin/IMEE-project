@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route} from 'react-dom'
 import  Navbar  from './components/Navbar/Navbar.jsx'
 import  Login  from './components/Views/login.jsx'
 import Register from './components/Views/register.jsx'
