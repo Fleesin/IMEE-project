@@ -2,7 +2,7 @@
     margin-top: 3rem;
 }
 .form-inscrip {
-    position: absolute;
+    display: inline-block;
     background-color: #fff;
     border-color: aqua;
     border-radius: 20px;

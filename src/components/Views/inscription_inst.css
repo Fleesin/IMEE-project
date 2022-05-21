@@ -15,6 +15,7 @@
  }
  
  .form-regInst {
+     display: inline-block;
      background-color: #fff;
      border-color: aqua;
      border-radius: 20px;
@@ -22,13 +23,9 @@
      color: #000;
      font-family: 'Roboto-Black', sans-serif;;
      font-size: 16px;
-     left: 53%;
      height: 480px;
-     position: absolute;
      padding: 20px;
-     top: 45%;
-     transform: translate(-50%, -50%);
-     width: 70%;
+
  }
  
  .form-regInst h1 {
