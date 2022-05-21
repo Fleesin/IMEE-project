@@ -6,6 +6,7 @@ import Register from './components/Views/register'
 import Inscription_est from './components/Views/inscription_est'
 import Inscription_inst from './components/Views/inscription_inst'
 import User_type from './components/Views/user_type'
+import Home from './components/Views/Home'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Navbar/>
         <Routes>
+            <Route path='/' element={<Home/>}/>
             <Route path='login' element={<Login/>}/>
             <Route path='register' element={<Register/>}/>
             <Route path='inscription_est' element={<Inscription_est/>}/>
