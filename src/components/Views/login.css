@@ -6,47 +6,30 @@
 	height: 80vh;
 }
 
-.login-image .imagen-aula{
-	background: none;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 0px;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 0px;
-	left: 22%;
-	position: absolute;
-	width: 628px;
-}
 .sub-label{
 	text-align: left;
 }
 
 .login-box {
 	background-color: #fff;
-	border-color: aqua;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
+	border-radius: 20px;
 	box-sizing: border-box;
 	color: #000;
-	left: 50%;
+	display: inline-block;
 	height: 420px;
 	padding: 70px 30px;
-	position: absolute;
-	top: 50%;
-	transform: translate(-50%, -50%);
+	margin-top: 150px;
 	width: 320px;
 }
 
 .login-box .icono {
-	border-width: 45%;
 	border-radius: 60%;
 	border-color: black;
 	border-width: 2px;
 	left: calc(50% - 50px);
 	height: 110px;
 	position: absolute;
-	top: -58px;
+	top: 170px;
 	width: 110px;
 }
 

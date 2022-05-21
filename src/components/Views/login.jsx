@@ -7,7 +7,7 @@ const Login = () =>{
         <>
             <body class="lrbody">
                 <div class="login-box">
-                <img className="icono" src="user-icon.png" />
+                    <img className="icono" src="user-icon.png" />
                     <h1>Iniciar Sesión</h1><br/>
                     <form action="/home">
                         <div class="sub-label">

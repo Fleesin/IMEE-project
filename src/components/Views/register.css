@@ -1,22 +1,20 @@
-
+body{
+	min-height: 100%; 
+	
+}
 .register-box {
 	background-color: #fff;
-	border-color: aqua;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
+	border-radius: 20px;
 	box-sizing: border-box;
 	color: #000;
 	font-family: 'Roboto-Black', sans-serif;;
 	font-size: 16px;
-	left: 50%;
-	height: 450px;
+	height: 400px;
+	display: inline-block;
+	margin-top: 8rem;
 	padding: 50px 30px;
-	position: absolute;
-	top: 47%;
-	transform: translate(-50%, -50%);
 	width: 300px;
+	
 }
 
 .register-box h1 {

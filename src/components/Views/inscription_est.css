@@ -1,9 +1,8 @@
-
- 
 .title {
     margin-top: 3rem;
 }
 .form-inscrip {
+    position: absolute;
     background-color: #fff;
     border-color: aqua;
     border-radius: 20px;
@@ -11,12 +10,8 @@
     color: #000;
     font-family: 'Roboto-Black', sans-serif;;
     font-size: 16px;
-    left: 53%;
     padding: 2rem;
-    position: absolute;
-    top: 45%;
-    transform: translate(-50%, -45%);
-    width: 70%;
+    width: 70vh;
 }
  
 .form-inscrip h1 {
@@ -59,10 +54,10 @@
 }
  
 .form-nombre,
-.form-infoE,
+
 .form-infoE2,
-.form-infoE3,
 .form-direccion,
+.form-infoE,
 .form-InfM,
 .form-InfP,
 .form-InfA,
@@ -71,6 +66,10 @@
     display: flex;
     padding-top: 1%;
     height: 26px;
+}
+
+.form-infoE3{
+    display: absolute;
 }
 
 .form-nombre input[type="text"] {
@@ -194,4 +193,12 @@ footer {
     top: 86%;
     transform: translate(0%, 50%);
     width: 100%;
+}
+
+
+@media screen and (max-width:634px) {
+
+    .form-inscrip{
+        width: 100%;
+    }
 }

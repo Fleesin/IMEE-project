@@ -7,7 +7,7 @@ const Register = () => {
 
     return (
     
-        <><body class="lrbody">
+        <><body>
             <div class="register-box">
                 <h1>Registrate</h1>
                 <form action="/user_type">
