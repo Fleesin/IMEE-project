@@ -1,9 +1,9 @@
 import React from 'react';
 import './login.css';
-import { Button } from '../Button';
 
 
 const Login = () =>{
+    
     return(
         <>
             <body class="lrbody">
@@ -22,19 +22,20 @@ const Login = () =>{
                         
                         <input type="password" placeholder="Ingresar contraseña" required/>
 
-                        <Button type="submit" id="in">Ingresar</Button><br/><br/>
-                    
+                        <input type="submit" value="Ingresar"/><br/><br/>
+                      
                         
                         <a href="#">¿Ha olvidado su contraseña?</a><br/>
                         <a href="/register">¿No está Registrado todavía?</a>
 
                     </form>
+                    
                 </div>
             </body>
-            
-        
         </>
     )
 }
+
+
 
 export default Login;
