@@ -22,7 +22,7 @@ const Login = () =>{
                         
                         <input type="password" placeholder="Ingresar contraseña" required/>
 
-                        <Button type="submit" id="in" onClick={hide('nav_button')}>Ingresar</Button><br/><br/>
+                        <Button type="submit" id="in">Ingresar</Button><br/><br/>
                     
                         
                         <a href="#">¿Ha olvidado su contraseña?</a><br/>
