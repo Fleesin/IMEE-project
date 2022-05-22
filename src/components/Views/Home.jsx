@@ -18,6 +18,24 @@ const Home = () =>{
             <div class="image">
                 <img src="/IMEE-verde.png"/>
             </div>
+            
+        </section>
+        <section class="inicio2" id="inicio2">
+            
+        <div class="image2">
+                    <img src="/matriculando.png"/>
+                </div>
+            <div class="content">
+                <h3>Descripción del <span>problema</span></h3>
+                <p>
+                    Cada año cuando las instituciones y colegios realizan los procesos de inscripción y matrículas se 
+                    presentan múltiples dificultades para poder llevarse a cabo, iniciando desde los extensos 
+                    procedimientos los cuales no están automatizados, sino que son realizados por medio de un formato escrito 
+                    que en muchas ocasiones es tedioso y generan grandes dificultades al momento de rellenarlos, 
+                    ya que estos tienden a saltarse alguna información importante, no entenderse o simplemente como son documentos
+                    físicos estos tienden a extraviarse y recibir algunos daños.
+                </p>
+            </div>
         </section>
         </>
     )

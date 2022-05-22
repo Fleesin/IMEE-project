@@ -1,9 +1,9 @@
 section{
-  min-height: 100vh;
+  min-height: 70vh;
   padding: 0 9%;
   padding-bottom: 2rem;
 }
-
+.inicio2,
 .inicio{
   display: flex;
   align-items: center;
@@ -16,18 +16,22 @@ section{
   animation: float 3s linear infinite;
 }
 
+.inicio2 .image2 img{
+  width: 40vw;
+}
+.inicio2 .content h3,
 .inicio .content h3{
   font-family: Roboto;
   font-size: 3.5rem;
   color: black;
   text-transform: uppercase;
 }
-
+.inicio2 .content h3 span,
 .inicio .content h3 span{
   color: rgb(18,127,46);
   text-transform: uppercase;
 }
-
+.inicio2 .content p,
 .inicio .content p{
   font-size: 1.7rem;
   color: black;
@@ -40,5 +44,41 @@ section{
   }
   50%{
     transform: translateY(-3.5rem);
+  }
+}
+
+@media (max-width:768px) {
+  .inicio{
+    flex-flow: column-reverse;
+  }
+
+  .inicio .image img{
+    width: 100%;
+  }
+
+  .inicio .content h3{
+    font-size: 3.6rem;
+  }
+
+  .inicio .content p{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width:768px) {
+  .inicio2{
+    flex-flow: column;
+  }
+
+  .inicio2 .image img{
+    width: 100%;
+  }
+
+  .inicio2 .content h3{
+    font-size: 3.6rem;
+  }
+
+  .inicio2 .content p{
+    font-size: 1.5rem;
   }
 }
