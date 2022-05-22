@@ -1,0 +1,45 @@
+section{
+  min-height: 100vh;
+  padding: 0 9%;
+  padding-top: 7.5rem;
+  padding-bottom: 2rem;
+}
+
+.inicio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.inicio .image img{
+  width: 40vw;
+  animation: float 3s linear infinite;
+}
+
+.inicio .content h3{
+  font-family: Roboto;
+  font-size: 3.5rem;
+  color: black;
+  text-transform: uppercase;
+}
+
+.inicio .content h3 span{
+  color: rgb(18,127,46);
+  text-transform: uppercase;
+}
+
+.inicio .content p{
+  font-size: 1.7rem;
+  color: black;
+  padding: 1rem 0;
+}
+
+@keyframes float{
+  0%, 100%{
+    transform: translateY(0rem);
+  }
+  50%{
+    transform: translateY(-3.5rem);
+  }
+}

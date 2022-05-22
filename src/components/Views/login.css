@@ -1,7 +1,7 @@
 .lrbody {
 	padding-top: 0;
 	font-family: sans-serif;
-	background: url("fondoblanco2.jpeg") no-repeat center top;
+	background: url("/imee-project/public/") no-repeat center top;
 	background-size: cover;
 	width: 100%;
 	height: 47rem;
