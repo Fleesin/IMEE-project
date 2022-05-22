@@ -1,5 +1,6 @@
 import React from 'react';
 import './login.css';
+import { Button } from '../Button';
 
 
 const Login = () =>{
@@ -9,7 +10,7 @@ const Login = () =>{
                 <div class="login-box">
                     <img className="icono" src="user-icon.png" />
                     <h1>Iniciar Sesión</h1><br/>
-                    <form action="/home">
+                    <form action="/">
                         <div class="sub-label">
                             <label for="username">Usuario</label>
                         </div>
@@ -21,7 +22,8 @@ const Login = () =>{
                         
                         <input type="password" placeholder="Ingresar contraseña" required/>
 
-                        <input  type="submit" value="Ingresar" /><br/><br/>
+                        <Button type="submit" id="in" onClick={hide('nav_button')}>Ingresar</Button><br/><br/>
+                    
                         
                         <a href="#">¿Ha olvidado su contraseña?</a><br/>
                         <a href="/register">¿No está Registrado todavía?</a>
@@ -29,6 +31,7 @@ const Login = () =>{
                     </form>
                 </div>
             </body>
+            
         
         </>
     )

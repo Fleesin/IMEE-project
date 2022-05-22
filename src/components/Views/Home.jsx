@@ -13,7 +13,7 @@ const Home = () =>{
                 <p>
                     El sistema de Inscripción de Matrículas Estudiantiles Escolares (IMEE) es una herramienta que da apoyo al proceso de matrícula estudiantil.
                 </p>
-                <a href="#"><Button>Seguir</Button></a>
+                <a href="/services"><Button>Seguir</Button></a>
             </div>
             <div class="image">
                 <img src="/IMEE-verde.png"/>
