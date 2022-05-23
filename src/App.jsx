@@ -9,6 +9,8 @@ import User_type from './components/Views/user_type.jsx'
 import Home from './components/Views/Home.jsx'
 import Footer from './components/Footer/footer'
 import Services from './components/Views/Services'
+import Institution from './components/Views/institutions'
+
 
 function App() {
 
@@ -25,6 +27,7 @@ function App() {
             <Route path='inscription_inst' element={<Inscription_inst/>}/>
             <Route path='user_type' element={<User_type/>}/>
             <Route path='services' element={<Services/>}/>
+            <Route path='institutions' element={<Institution/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter> 
