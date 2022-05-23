@@ -10,6 +10,8 @@ import Home from './components/Views/Home.jsx'
 import Footer from './components/Footer/footer'
 import Services from './components/Views/Services'
 import Institution from './components/Views/institutions'
+import Perfil_est from './components/Views/Profiles/perfil_est'
+import Perfil_inst from './components/Views/Profiles/perfil_inst'
 
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
             <Route path='user_type' element={<User_type/>}/>
             <Route path='services' element={<Services/>}/>
             <Route path='institutions' element={<Institution/>}/>
+            <Route path='my-profile' element={<Perfil_est/>}/>
+            <Route path='my-profile-inst' element={<Perfil_inst/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter> 
