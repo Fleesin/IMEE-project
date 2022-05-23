@@ -22,7 +22,7 @@ const Login = () =>{
                         
                         <input type="password" placeholder="Ingresar contraseña" required/>
 
-                        <input type="submit" value="Ingresar"/><br/><br/>
+                        <a href='my-profile'><input type="submit" value="Ingresar"/></a><br/><br/>
                       
                         
                         <a href="#">¿Ha olvidado su contraseña?</a><br/>
