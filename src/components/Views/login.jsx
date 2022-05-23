@@ -10,7 +10,7 @@ const Login = () =>{
                 <div class="login-box">
                     <img className="icono" src="user-icon.png" />
                     <h1>Iniciar Sesión</h1><br/>
-                    <form action="/">
+                    <form action="/my-profile">
                         <div class="sub-label">
                             <label for="username">Usuario</label>
                         </div>
@@ -22,7 +22,7 @@ const Login = () =>{
                         
                         <input type="password" placeholder="Ingresar contraseña" required/>
 
-                        <a href='/my-profile'><input type="submit" value="Ingresar"/></a><br/><br/>
+                        <input type="submit" value="Ingresar"/><br/><br/>
                       
                         
                         <a href="#">¿Ha olvidado su contraseña?</a><br/>
