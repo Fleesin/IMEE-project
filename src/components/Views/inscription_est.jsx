@@ -55,7 +55,6 @@ const Inscription_est = () =>{
 			tipoSanguinio,
 			rh,
 			genero,
-			matriculado,
 			IdePadre,
 			correoPadre,
 			telPadre,
