@@ -50,7 +50,7 @@ const Inscription_inst =()=>{
         <body class="lrbody">
             <div class="form-regInst">
                 <h1>Formulario de Registro Institución</h1>
-                <form method='POST' onSubmit={(e) => onSubmit(e, idCol, nombreInsti,descripcionInsti,direccionInsti,barrioInsti,localidadInsti, correoInsti, telefonoInsti,telefonoFijoInsti, nit, codigoDANE,tipoZona,sectorInsti,nombreRector,usuario)}>
+                <form method='POST' onSubmit={(e) => onSubmit(e, idCol, nombreInsti,descripcionInsti,direccionInsti,barrioInsti,localidadInsti, correoInsti, telefonoInsti,telefonoFijoInsti, nit, codigoDANE,tipoZona,sectorInsti,nombreRector,usuario, POST())}>
                     <div class="form">
                         <div class="text">
                             
