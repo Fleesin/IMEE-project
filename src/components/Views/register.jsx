@@ -17,7 +17,7 @@ const Register = ({onSubmit}) => {
         <><body class="lrbody">
             <div class="register-box">
                 <h1>Registrate</h1>
-                <form action="/user_type" method="POST" onSubmit={(e) => onSubmit(e, email, password)}>
+                <form action="/user_type" onSubmit={(e) => onSubmit(e, email, password)}>
                     <div class="input-container">
                         <i class="fa-solid fa-envelope" />
                         <input type="email" name="email" placeholder="Correo Electrónico *" onChange={(e) => setEmail(e.target.value)} required/>
