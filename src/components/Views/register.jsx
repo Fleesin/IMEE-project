@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import './register.css';
 
 const Register = ({onSubmit}) => {
+    const baseURL="https://imee-app-backend.herokuapp.com/profile"
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     function POST(){
