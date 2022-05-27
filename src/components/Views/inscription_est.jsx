@@ -70,9 +70,6 @@ const Inscription_est = () =>{
 			telAcu,
 			direccionAcu
 		})
-		.then((res =>{
-			setPost(res.data)
-		}))
 	}
 
     return(

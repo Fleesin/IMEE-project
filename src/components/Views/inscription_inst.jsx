@@ -41,9 +41,6 @@ const Inscription_inst =()=>{
             nombreRector,
             usuario
 		})
-		.then((res =>{
-			setPost(res.data)
-		}))
 	}
 	
     return(
