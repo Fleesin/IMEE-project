@@ -27,6 +27,18 @@
      padding: 20px;
 
  }
+
+ .boton{
+    background: #147c2d;
+	border:  5px;
+	border-radius: 20px;
+	color: #fff;
+	font-size: 16px;
+	width: 200px;
+	height: 40px;
+	outline: none;
+	align-content: center;
+ }
  
  .form-regInst h1 {
      font-size: 21px;

@@ -6,7 +6,7 @@ import '../Views/register.css';
 
 
 const Inscription_inst =()=>{
-    baseURL = "https://imee-app-backend.herokuapp.com/instituciones"
+    const baseURL = "https://imee-app-backend.herokuapp.com/instituciones"
     const [idCol, setId] = useState("");
 	const [nombreInsti, setnombreInsti] = useState("");
     const [descripcionInsti, setdescripcionInsti] = useState("");
@@ -50,7 +50,7 @@ const Inscription_inst =()=>{
         <body class="lrbody">
             <div class="form-regInst">
                 <h1>Formulario de Registro Institución</h1>
-                <form method='POST' onSubmit={(e) => onSubmit(e, idCol, nombreInsti,descripcionInsti,direccionInsti,barrioInsti,localidadInsti, correoInsti, telefonoInsti,telefonoFijoInsti, nit, codigoDANE,tipoZona,sectorInsti,nombreRector,usuario, POST())}>
+                <form action='/my-profile-inst' onSubmit={POST()}>
                     <div class="form">
                         <div class="text">
                             
