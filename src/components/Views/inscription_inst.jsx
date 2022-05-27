@@ -110,6 +110,7 @@ const Inscription_inst =()=>{
                         <br/>
                         
                     </div>
+                    <input class="boton" type="submit" value="Terminar Registro" /><br /><br />
                 </form>
             </div>
         </body>

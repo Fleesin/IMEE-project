@@ -193,7 +193,9 @@ const Inscription_est = () =>{
 					<label>Observaciones:</label>
 					<input onChange={(e) => setObservation(e.target.value)} type="text"/>
 				</div>
+				<input class="boton" type="submit" value="Terminar Registro" /><br /><br />
 			</form>
+			
 		</div>
 	
 		</body>
