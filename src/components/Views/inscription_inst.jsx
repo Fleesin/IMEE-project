@@ -1,4 +1,6 @@
 import React from 'react';
+import axios from 'axios';
+import { useState } from 'react';
 import './inscription_inst.css';
 
 const Inscription_inst =()=>{
