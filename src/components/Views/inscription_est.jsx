@@ -78,7 +78,7 @@ const Inscription_est = () =>{
 		<body class="lrbody">
             <div class="form-inscrip">
 			<b><h1>Formulario de Inscripción</h1></b>
-			<form method='POST' onSubmit={(e) => onSubmit(e, nombres, apellidos, identificacion,tipoIdent,fechaNacimiento,nacionalidad,direccion,barrio,localidad,telefono,estrato,eps,tipoSanguinio,rh,genero,matriculado,IdePadre,correoPadre,telPadre,nomPadre,nomMadre,ideMadre,correoMadre,telMadre,NomAcu, IdeAcu,fechaNacAcu,telAcu,direccionAcu)}>
+			<form onSubmit={(e) => onSubmit(e, nombres, apellidos, identificacion,tipoIdent,fechaNacimiento,nacionalidad,direccion,barrio,localidad,telefono,estrato,eps,tipoSanguinio,rh,genero,matriculado,IdePadre,correoPadre,telPadre,nomPadre,nomMadre,ideMadre,correoMadre,telMadre,NomAcu, IdeAcu,fechaNacAcu,telAcu,direccionAcu)}>
 				{/* <!--------------Info Estudiante-----------> */}
 				<div class="form-nombre">
 					<input type="text" placeholder="Apellidos del Estudiante *" onChange={(e) => setApellido(e.target.value)} required/>
