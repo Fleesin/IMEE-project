@@ -1,24 +1,31 @@
-
-import React from "react";
+import React, {useState} from "react";
 import './register.css';
 
-
-const Register = () => {
-
+const Register = ({onSubmit}) => {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    function POST(){
+		axios.post( baseURL, {
+			email,
+            password
+		})
+		.then((res =>{
+			setPost(res.data)
+		}))
+	}
     return (
-    
         <><body class="lrbody">
             <div class="register-box">
                 <h1>Registrate</h1>
-                <form action="/user_type">
+                <form action="/user_type" method="POST" onSubmit={(e) => onSubmit(e, email, password)}>
                     <div class="input-container">
                         <i class="fa-solid fa-envelope" />
-                        <input type="text" placeholder="Correo Electrónico *"  required/>
+                        <input type="email" name="email" placeholder="Correo Electrónico *" onChange={(e) => setEmail(e.target.value)} required/>
                     </div>
 
                     <div class="input-container">
                         <i class="fa-solid fa-key" />
-                        <input type="password" placeholder="Contraseña *"  required/>
+                        <input type="password" name="password" placeholder="Contraseña *"  onChange={e=> setPassword(e.target.value)}  required/>
                     </div>
 
                     <div class="input-container">
@@ -32,9 +39,7 @@ const Register = () => {
                 </form>
             </div>
         </body>
-        
-        </> 
-    
+        </>
   )
 }
 
