@@ -3,7 +3,7 @@ import axios from 'axios';
 import './register.css';
 
 const Register = ({}) => {
-    const baseURL="https://imee-app-backend.herokuapp.com/profile"
+    const baseURL="https://imee-app-backend.herokuapp.com/profile/"
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
