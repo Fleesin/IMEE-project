@@ -38,7 +38,7 @@ const Inscription_est = () =>{
 	const [telAcu, setPhoneA] = useState("");
 	const [direccionAcu, setDireccionA] = useState("");
 	
-	handleSubmit = e =>{
+	onSubmit = e =>{
 		e.preventDefault();
 		const estudent ={
 			nombres, 
@@ -84,7 +84,7 @@ const Inscription_est = () =>{
 		<body class="lrbody">
             <div class="form-inscrip">
 			<b><h1>Formulario de Inscripción</h1></b>
-			<form onSubmit={this.handleSubmit()}>
+			<form onSubmit={this.onSubmit()}>
 				{/* <!--------------Info Estudiante-----------> */}
 				<div class="form-nombre">
 					<input type="text" placeholder="Apellidos del Estudiante *" onChange={(e) => setApellido(e.target.value)} required/>
