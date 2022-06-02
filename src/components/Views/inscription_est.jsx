@@ -38,8 +38,8 @@ const Inscription_est = () =>{
 	const [telAcu, setPhoneA] = useState("");
 	const [direccionAcu, setDireccionA] = useState("");
 	
-	handleSubmit = event =>{
-		event.preventDefault();
+	handleSubmit = e =>{
+		e.preventDefault();
 		const estudent ={
 			nombres, 
 			apellidos, 
