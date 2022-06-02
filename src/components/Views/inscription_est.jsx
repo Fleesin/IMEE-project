@@ -72,7 +72,7 @@ const Inscription_est = () =>{
 			
 		}, {
 			headers: {
-				Autorization: 'Token ${token}'
+				Authorization: 'Token ${token}'
 			}
 		})
 		.then(res=>{
