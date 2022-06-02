@@ -11,7 +11,7 @@ const Register = ({}) => {
         e.preventDefault();
         const user = {
             email,
-            Password
+            password
         }
 		axios.post( baseURL, {user})
         .then(res=>{
@@ -25,7 +25,7 @@ const Register = ({}) => {
         <><body class="lrbody">
             <div class="register-box">
                 <h1>Registrate</h1>
-                <form action="/user_type" onSubmit={this.handleSubmit}>
+                <form action="/user_type" onSubmit={handleSubmit}>
                     <div class="input-container">
                         <i class="fa-solid fa-envelope" />
                         <input type="email" name="email" placeholder="Correo Electrónico *" onChange={(e) => setEmail(e.target.value)} required/>
