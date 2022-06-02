@@ -63,11 +63,16 @@ const Inscription_est = () =>{
 			ideMadre,
 			correoMadre,
 			telMadre,
-			NomAcu, 
+			NomAcu,  	
 			IdeAcu,
 			fechaNacAcu,
 			telAcu,
 			direccionAcu
+		})
+		.then(res=>{
+			console.log(res);
+			console.log(res.data);
+			window.location = "/retrieve"
 		})
 	}
 
@@ -76,7 +81,7 @@ const Inscription_est = () =>{
 		<body class="lrbody">
             <div class="form-inscrip">
 			<b><h1>Formulario de Inscripción</h1></b>
-			<form onSubmit={POST()}>
+			<form onSubmit={this.POST()}>
 				{/* <!--------------Info Estudiante-----------> */}
 				<div class="form-nombre">
 					<input type="text" placeholder="Apellidos del Estudiante *" onChange={(e) => setApellido(e.target.value)} required/>
