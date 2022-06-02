@@ -69,6 +69,11 @@ const Inscription_est = () =>{
 			fechaNacAcu,
 			telAcu,
 			direccionAcu
+			
+		}, {
+			headers: {
+				Autorization: 'Bearer' + token
+			}
 		})
 		.then(res=>{
 			console.log(res);
