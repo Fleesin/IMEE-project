@@ -38,9 +38,9 @@ const Inscription_est = () =>{
 	const [telAcu, setPhoneA] = useState("");
 	const [direccionAcu, setDireccionA] = useState("");
 	
-	onSubmit = e =>{
+	const handleSubmit = e =>{
 		e.preventDefault();
-		const estudent ={
+		axios.post( baseURL, {
 			nombres, 
 			apellidos, 
 			identificacion,
@@ -69,13 +69,12 @@ const Inscription_est = () =>{
 			fechaNacAcu,
 			telAcu,
 			direccionAcu
-		}
-		axios.post( baseURL, {estudent})
+		})
 		.then(res=>{
 			console.log(res);
 			console.log(res.data);
-			window.location = "/retrieve"
-	})
+			window.location = "/my-profile"
+		})
 	}
 	
 
@@ -84,7 +83,7 @@ const Inscription_est = () =>{
 		<body class="lrbody">
             <div class="form-inscrip">
 			<b><h1>Formulario de Inscripción</h1></b>
-			<form onSubmit={this.onSubmit}>
+			<form onSubmit={handleSubmit}>
 				{/* <!--------------Info Estudiante-----------> */}
 				<div class="form-nombre">
 					<input type="text" placeholder="Apellidos del Estudiante *" onChange={(e) => setApellido(e.target.value)} required/>
