@@ -7,7 +7,7 @@ const Register = ({}) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    onSubmit = e =>{
+    handleSubmit = e =>{
         e.preventDefault();
         const user = {
             email: this.state.email,
@@ -25,7 +25,7 @@ const Register = ({}) => {
         <><body class="lrbody">
             <div class="register-box">
                 <h1>Registrate</h1>
-                <form action="/user_type" onSubmit={this.onSubmit}>
+                <form action="/user_type" onSubmit={this.handleSubmit}>
                     <div class="input-container">
                         <i class="fa-solid fa-envelope" />
                         <input type="email" name="email" placeholder="Correo Electrónico *" onChange={(e) => setEmail(e.target.value)} required/>
