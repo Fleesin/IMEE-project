@@ -10,8 +10,8 @@ const Register = ({}) => {
     handleSubmit = e =>{
         e.preventDefault();
         const user = {
-            email: this.state.email,
-            password: this.state.password
+            email,
+            Password
         }
 		axios.post( baseURL, {user})
         .then(res=>{
