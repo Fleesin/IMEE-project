@@ -9,11 +9,11 @@ const Register = ({}) => {
 
     const handleSubmit = e =>{
         e.preventDefault();
-        const user = {
+        const usuario = {
             email,
             password
         }
-		axios.post( baseURL, {user})
+		axios.post( baseURL, {usuario})
         .then(res=>{
 			console.log(res);
 			console.log(res.data);
@@ -32,7 +32,7 @@ const Register = ({}) => {
 
                     <div class="input-container">
                         <i class="fa-solid fa-key" />
-                        <input type="password" name="password" placeholder="Contraseña *"  onChange={e=> setPassword(e.target.value)}  required/>
+                        <input type="password" name="password" placeholder="Contraseña *"  onChange={(e)=> setPassword(e.target.value)}  required/>
                     </div>
 
                     <div class="input-container">
