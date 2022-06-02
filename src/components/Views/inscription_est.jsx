@@ -7,7 +7,7 @@ import '../Views/register.css';
 
 const Inscription_est = () =>{
 	
-	const baseURL = "https://imee-app-backend.herokuapp.com/estudiantes"
+	const baseURL = "https://imee-app-backend.herokuapp.com/estudiantes/"
 	const [nombres, setNombre] = useState("");
     const [apellidos, setApellido] = useState("");
 	const [identificacion, setId] = useState("");

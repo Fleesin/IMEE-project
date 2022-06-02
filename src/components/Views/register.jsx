@@ -9,11 +9,11 @@ const Register = ({}) => {
 
     const handleSubmit = e =>{
         e.preventDefault();
-        const usuario = {
+        
+		axios.post( baseURL, {
             email,
             password
-        }
-		axios.post( baseURL, {usuario})
+        })
         .then(res=>{
 			console.log(res);
 			console.log(res.data);
