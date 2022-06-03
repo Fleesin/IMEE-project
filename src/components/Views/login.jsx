@@ -5,13 +5,13 @@ import './login.css';
 
 const Login = () =>{
     const baseURL="https://imee-app-backend.herokuapp.com/login/"
-    const [email, setEmail] = useState("");
+    const [username, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const handleSubmit = e =>{
         e.preventDefault();
 
 		axios.post( baseURL, {
-            email,
+            username,
             password
         })
         .then(res=>{
