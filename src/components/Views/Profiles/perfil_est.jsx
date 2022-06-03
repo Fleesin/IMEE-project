@@ -3,7 +3,75 @@ import './perfil_est.css';
 
 
 const Perfil_est = () =>{
-    
+    const baseURL="https://imee-app-backend.herokuapp.com/estdudiantes//<int:pk>"
+    const [nombres, setNombre] = useState("");
+    const [apellidos, setApellido] = useState("");
+	const [identificacion, setId] = useState("");
+	const [tipoIdent, setIdt] = useState("");
+	const [fechaNacimiento, setDate] = useState("");
+	const [nacionalidad, setNacionalidad] = useState("");
+	const [direccion, setDireccion] = useState("");
+	const [barrio, setBarrio] = useState("");
+	const [localidad, setLocalidad] = useState("");
+	const [telefono, setPhone] = useState("");
+	const [estrato, setEstrato] = useState("");
+	const [eps, setEps] = useState("");
+	const [tipoSanguinio, setTsangre] = useState("");
+	const [rh, setRh] = useState("");
+	const [genero, setGender] = useState("");
+
+	const [nomPadre, setNombreP] = useState("");
+	const [IdePadre, setIdP] = useState("");
+	const [correoPadre, setEmailP] = useState("");
+	const [telPadre, setPhoneP] = useState("");
+	const [nomMadre, setNombreM] = useState("");
+	const [ideMadre, setIdM] = useState("");
+	const [correoMadre, setEmailM] = useState("");
+	const [telMadre, setPhoneM] = useState("");
+	const [NomAcu, setNombreA] = useState("");
+	const [IdeAcu, setIdA] = useState("");
+	const [fechaNacAcu, setDateA] = useState("");
+	const [telAcu, setPhoneA] = useState("");
+	const [direccionAcu, setDireccionA] = useState("");
+
+    const handleSubmit = e =>{
+        e.preventDefault();
+		axios.get( baseURL, {
+            nombres, 
+			apellidos, 
+			identificacion,
+			tipoIdent,
+			fechaNacimiento,
+			nacionalidad,
+			direccion,
+			barrio,
+			localidad,
+			telefono,
+			estrato,
+			eps,
+			tipoSanguinio,
+			rh,
+			genero,
+			IdePadre,
+			correoPadre,
+			telPadre,
+			nomPadre,
+			nomMadre,
+			ideMadre,
+			correoMadre,
+			telMadre,
+			NomAcu,  	
+			IdeAcu,
+			fechaNacAcu,
+			telAcu,
+			direccionAcu
+        })
+        .then(res=>{
+			console.log(res);
+			console.log(res.data);
+            window.location = "/user_type"
+        })
+	}
     return(
         <>
             <body>
@@ -14,8 +82,8 @@ const Perfil_est = () =>{
                     </div>
                 </div>
                 <div class="info-Nombre">
-                    <label for="text">Apellidos del Estudiante:</label>
-                    <label for="text">Nombres del Estudiante:</label>
+                    <label for="text">Apellidos del Estudiante: {{$apellidos}}</label>
+                    <label for="text">Nombres del Estudiante: {{$nombres}}</label>
                 </div>
                 <div class="info-General">
                     <div class="input-container">
@@ -25,12 +93,12 @@ const Perfil_est = () =>{
                     
                     <div class="input-container">
                         <i class="fa-solid fa-address-card"></i>
-                        <label for="text">Identificación:</label>
+                        <label for="text" >Identificación:</label>
                     </div>
 
                     <div class="input-container">
                         <i class="fa-solid fa-calendar-days"></i>
-                        <label for="text">Fecha de Nacimiento:</label>
+                        <label for="text" >Fecha de Nacimiento:</label>
                     </div>
 
                     <div class="input-container">
