@@ -34,7 +34,6 @@ const Perfil_est = () =>{
 	const [fechaNacAcu] = useState("");
 	const [telAcu] = useState("");
 	const [direccionAcu] = useState("");
-
     useEffect(() => {
         axios.get(`${baseURL}${id}/`, {
             nombres,
