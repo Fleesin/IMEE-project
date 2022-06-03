@@ -4,7 +4,7 @@ import './perfil_est.css';
 
 
 const Perfil_est = () =>{
-    const baseURL="https://imee-app-backend.herokuapp.com/estdudiantes//<int:pk>"
+    const baseURL="https://imee-app-backend.herokuapp.com/estudiantes/<int:pk>"
     const [nombres, setNombre] = useState("");
     const [apellidos, setApellido] = useState("");
 	const [identificacion, setId] = useState("");

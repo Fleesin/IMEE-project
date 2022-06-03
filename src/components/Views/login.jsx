@@ -4,7 +4,7 @@ import './login.css';
 
 
 const Login = () =>{
-    const baseURL="https://imee-app-backend.herokuapp.com/estudante/"
+    const baseURL="https://imee-app-backend.herokuapp.com/login/"
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const handleSubmit = e =>{
