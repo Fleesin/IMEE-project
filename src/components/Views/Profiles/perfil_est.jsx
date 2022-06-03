@@ -5,7 +5,7 @@ import './perfil_est.css';
 
 const Perfil_est = () =>{
     const baseURL="https://imee-app-backend.herokuapp.com/estudiante/"
-    const [nombres] = useState("");
+    /*const [nombres] = useState("");
     const [apellidos] = useState("");
 	const [identificacion] = useState("");
 	const [tipoIdent] = useState("");
@@ -33,7 +33,8 @@ const Perfil_est = () =>{
 	const [IdeAcu] = useState("");
 	const [fechaNacAcu] = useState("");
 	const [telAcu] = useState("");
-	const [direccionAcu] = useState("");
+	const [direccionAcu] = useState("");*/
+    
     useEffect(() => {
         axios.get(`${baseURL}${id}/`, {
             nombres,
