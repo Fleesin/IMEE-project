@@ -1,78 +1,76 @@
-import React from 'react';
+import React , {useState} from 'react';
 import axios from 'axios';
 import './perfil_est.css';
 
 
 const Perfil_est = () =>{
     const baseURL="https://imee-app-backend.herokuapp.com/estudiantes/<int:pk>"
-    const [nombres, setNombre] = useState("");
-    const [apellidos, setApellido] = useState("");
-	const [identificacion, setId] = useState("");
-	const [tipoIdent, setIdt] = useState("");
-	const [fechaNacimiento, setDate] = useState("");
-	const [nacionalidad, setNacionalidad] = useState("");
-	const [direccion, setDireccion] = useState("");
-	const [barrio, setBarrio] = useState("");
-	const [localidad, setLocalidad] = useState("");
-	const [telefono, setPhone] = useState("");
-	const [estrato, setEstrato] = useState("");
-	const [eps, setEps] = useState("");
-	const [tipoSanguinio, setTsangre] = useState("");
-	const [rh, setRh] = useState("");
-	const [genero, setGender] = useState("");
+    const [nombres] = useState("");
+    const [apellidos] = useState("");
+	const [identificacion] = useState("");
+	const [tipoIdent] = useState("");
+	const [fechaNacimiento] = useState("");
+	const [nacionalidad] = useState("");
+	const [direccion] = useState("");
+	const [barrio] = useState("");
+	const [localidad] = useState("");
+	const [telefono] = useState("");
+	const [estrato] = useState("");
+	const [eps] = useState("");
+	const [tipoSanguinio] = useState("");
+	const [rh] = useState("");
+	const [genero] = useState("");
 
-	const [nomPadre, setNombreP] = useState("");
-	const [IdePadre, setIdP] = useState("");
-	const [correoPadre, setEmailP] = useState("");
-	const [telPadre, setPhoneP] = useState("");
-	const [nomMadre, setNombreM] = useState("");
-	const [ideMadre, setIdM] = useState("");
-	const [correoMadre, setEmailM] = useState("");
-	const [telMadre, setPhoneM] = useState("");
-	const [NomAcu, setNombreA] = useState("");
-	const [IdeAcu, setIdA] = useState("");
-	const [fechaNacAcu, setDateA] = useState("");
-	const [telAcu, setPhoneA] = useState("");
+	const [nomPadre] = useState("");
+	const [IdePadre] = useState("");
+	const [correoPadre] = useState("");
+	const [telPadre] = useState("");
+	const [nomMadre] = useState("");
+	const [ideMadre] = useState("");
+	const [correoMadre] = useState("");
+	const [telMadre] = useState("");
+	const [NomAcu] = useState("");
+	const [IdeAcu] = useState("");
+	const [fechaNacAcu] = useState("");
+	const [telAcu] = useState("");
 	const [direccionAcu, setDireccionA] = useState("");
 
-    const handleSubmit = e =>{
-        e.preventDefault();
-		axios.get( baseURL, {
-            nombres, 
-			apellidos, 
-			identificacion,
-			tipoIdent,
-			fechaNacimiento,
-			nacionalidad,
-			direccion,
-			barrio,
-			localidad,
-			telefono,
-			estrato,
-			eps,
-			tipoSanguinio,
-			rh,
-			genero,
-			IdePadre,
-			correoPadre,
-			telPadre,
-			nomPadre,
-			nomMadre,
-			ideMadre,
-			correoMadre,
-			telMadre,
-			NomAcu,  	
-			IdeAcu,
-			fechaNacAcu,
-			telAcu,
-			direccionAcu
-        })
-        .then(res=>{
-			console.log(res);
-			console.log(res.data);
-            window.location = "/user_type"
-        })
-	}
+    axios.get( baseURL, {
+        nombres, 
+        apellidos, 
+        identificacion,
+        tipoIdent,
+        fechaNacimiento,
+        nacionalidad,
+        direccion,
+        barrio,
+        localidad,
+        telefono,
+        estrato,
+        eps,
+        tipoSanguinio,
+        rh,
+        genero,
+        IdePadre,
+        correoPadre,
+        telPadre,
+        nomPadre,
+        nomMadre,
+        ideMadre,
+        correoMadre,
+        telMadre,
+        NomAcu,  	
+        IdeAcu,
+        fechaNacAcu,
+        telAcu,
+        direccionAcu
+    })
+    .then(res=>{
+        console.log(res);
+        console.log(res.data);
+        window.location = "/user_type"
+    })
+	
     return(
         <>
             <body>
