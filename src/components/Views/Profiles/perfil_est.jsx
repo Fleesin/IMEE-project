@@ -36,7 +36,7 @@ const Perfil_est = () =>{
 	const [direccionAcu] = useState("");
     
     useEffect(() => {
-        axios.get(`${baseURL}${id}/`, {
+        axios.get(`${baseURL}4/`, {
             nombres,
             id, 
             apellidos, 
@@ -70,7 +70,6 @@ const Perfil_est = () =>{
         .then(res=>{
             console.log(res);
             console.log(res.data);
-            window.location = "/user_type"
         })
       }, [])
 
