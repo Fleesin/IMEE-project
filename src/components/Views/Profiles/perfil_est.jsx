@@ -4,7 +4,7 @@ import './perfil_est.css';
 
 
 const Perfil_est = () =>{
-    const baseURL="https://imee-app-backend.herokuapp.com/estudiantes/<int:pk>"
+    const baseURL="https://imee-app-backend.herokuapp.com/estudiantes/"
     const [nombres] = useState("");
     const [apellidos] = useState("");
 	const [identificacion] = useState("");
@@ -33,9 +33,9 @@ const Perfil_est = () =>{
 	const [IdeAcu] = useState("");
 	const [fechaNacAcu] = useState("");
 	const [telAcu] = useState("");
-	const [direccionAcu, setDireccionA] = useState("");
+	const [direccionAcu] = useState("");
 
-    axios.get( baseURL, {
+    axios.get(`${baseURL}${id}`, {
         nombres, 
         apellidos, 
         identificacion,
@@ -81,8 +81,8 @@ const Perfil_est = () =>{
                     </div>
                 </div>
                 <div class="info-Nombre">
-                    <label for="text">Apellidos del Estudiante: {{$apellidos}}</label>
-                    <label for="text">Nombres del Estudiante: {{$nombres}}</label>
+                    <label for="text">Apellidos del Estudiante: {apellidos}</label>
+                    <label for="text">Nombres del Estudiante: {nombres}</label>
                 </div>
                 <div class="info-General">
                     <div class="input-container">
