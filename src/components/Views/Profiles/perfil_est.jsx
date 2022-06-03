@@ -35,7 +35,7 @@ const Perfil_est = () =>{
 	const [telAcu] = useState("");
 	const [direccionAcu] = useState("");
 
-    axios.get(`${baseURL}${id}`, {
+    axios.get(`${baseURL}${id}/`, {
         nombres,
         id, 
         apellidos, 
