@@ -20,7 +20,7 @@ const Perfil_est = () =>{
 	const [tipoSanguinio] = useState("");
 	const [rh] = useState("");
 	const [genero] = useState("");
-
+    const [id] = useState("");
 	const [nomPadre] = useState("");
 	const [IdePadre] = useState("");
 	const [correoPadre] = useState("");
