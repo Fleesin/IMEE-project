@@ -5,36 +5,39 @@ import './perfil_est.css';
 
 const Perfil_est = () =>{
     const baseURL="https://imee-app-backend.herokuapp.com/estudiante/"
-    const [nombres] = useState("");
-    const [apellidos] = useState("");
-	const [identificacion] = useState("");
-	const [tipoIdent] = useState("");
-	const [fechaNacimiento] = useState("");
-	const [nacionalidad] = useState("");
-	const [direccion] = useState("");
-	const [barrio] = useState("");
-	const [localidad] = useState("");
-	const [telefono] = useState("");
-	const [estrato] = useState("");
-	const [eps] = useState("");
-	const [tipoSanguinio] = useState("");
-	const [rh] = useState("");
-	const [genero] = useState("");
-    const [id] = useState("");
-	const [nomPadre] = useState("");
-	const [IdePadre] = useState("");
-	const [correoPadre] = useState("");
-	const [telPadre] = useState("");
-	const [nomMadre] = useState("");
-	const [ideMadre] = useState("");
-	const [correoMadre] = useState("");
-	const [telMadre] = useState("");
-	const [NomAcu] = useState("");
-	const [IdeAcu] = useState("");
-	const [fechaNacAcu] = useState("");
-	const [telAcu] = useState("");
-	const [direccionAcu] = useState("");
     
+    const [nombres, setNombre] = useState("");
+    const [apellidos, setApellido] = useState("");
+	const [identificacion, setId] = useState("");
+	const [tipoIdent, setIdt] = useState("");
+	const [fechaNacimiento, setDate] = useState("");
+	const [nacionalidad, setNacionalidad] = useState("");
+	const [direccion, setDireccion] = useState("");
+	const [barrio, setBarrio] = useState("");
+	const [localidad, setLocalidad] = useState("");
+	const [telefono, setPhone] = useState("");
+	const [estrato, setEstrato] = useState("");
+	const [eps, setEps] = useState("");
+	const [tipoSanguinio, setTsangre] = useState("");
+	const [rh, setRh] = useState("");
+	const [genero, setGender] = useState("");
+
+	const [nomPadre, setNombreP] = useState("");
+	const [IdePadre, setIdP] = useState("");
+	const [correoPadre, setEmailP] = useState("");
+	const [telPadre, setPhoneP] = useState("");
+	const [nomMadre, setNombreM] = useState("");
+	const [ideMadre, setIdM] = useState("");
+	const [correoMadre, setEmailM] = useState("");
+	const [telMadre, setPhoneM] = useState("");
+	const [NomAcu, setNombreA] = useState("");
+	const [IdeAcu, setIdA] = useState("");
+	const [fechaNacAcu, setDateA] = useState("");
+	const [telAcu, setPhoneA] = useState("");
+	const [direccionAcu, setDireccionA] = useState("");
+    
+
+    const [id, setId2] = useState("");
     useEffect(() => {
         axios.get(`${baseURL}4/`, {
             nombres,
@@ -70,6 +73,7 @@ const Perfil_est = () =>{
         .then(res=>{
             console.log(res);
             console.log(res.data);
+            
         })
       }, [])
 
@@ -85,8 +89,8 @@ const Perfil_est = () =>{
                     </div>
                 </div>
                 <div class="info-Nombre">
-                    <label for="text">Apellidos del Estudiante: {apellidos}</label>
-                    <label for="text">Nombres del Estudiante: {nombres}</label>
+                    <label for="text" onChange ={(e) => setApellido(e.target.value)}>Apellidos del Estudiante: {apellidos}</label>
+                    <label for="text" onChange ={(e) => setNombre(e.target.value)}>Nombres del Estudiante: {nombres}</label>
                 </div>
                 <div class="info-General">
                     <div class="input-container">
