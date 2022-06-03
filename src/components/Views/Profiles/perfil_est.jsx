@@ -88,8 +88,8 @@ const Perfil_est = () =>{
                     </div>
                 </div>
                 <div class="info-Nombre">
-                    <label for="text" onChange={() => setApellido(target.value)}>Apellidos del Estudiante: {apellidos}</label>
-                    <label for="text" onChange={() => setNombre(target.value)}>Nombres del Estudiante: {nombres}</label>
+                    <label for="text" onChange={(event) => setApellido(event.target.value)}>Apellidos del Estudiante: {apellidos}</label>
+                    <label for="text" onChange={(event) => setNombre(event.target.value)}>Nombres del Estudiante: {nombres}</label>
                 </div>
                 <div class="info-General">
                     <div class="input-container">
