@@ -35,42 +35,46 @@ const Perfil_est = () =>{
 	const [telAcu] = useState("");
 	const [direccionAcu] = useState("");
 
-    axios.get(`${baseURL}${id}/`, {
-        nombres,
-        id, 
-        apellidos, 
-        identificacion,
-        tipoIdent,
-        fechaNacimiento,
-        nacionalidad,
-        direccion,
-        barrio,
-        localidad,
-        telefono,
-        estrato,
-        eps,
-        tipoSanguinio,
-        rh,
-        genero,
-        IdePadre,
-        correoPadre,
-        telPadre,
-        nomPadre,
-        nomMadre,
-        ideMadre,
-        correoMadre,
-        telMadre,
-        NomAcu,  	
-        IdeAcu,
-        fechaNacAcu,
-        telAcu,
-        direccionAcu
-    })
-    .then(res=>{
-        console.log(res);
-        console.log(res.data);
-        window.location = "/user_type"
-    })
+    useEffect(() => {
+        axios.get(`${baseURL}${id}/`, {
+            nombres,
+            id, 
+            apellidos, 
+            identificacion,
+            tipoIdent,
+            fechaNacimiento,
+            nacionalidad,
+            direccion,
+            barrio,
+            localidad,
+            telefono,
+            estrato,
+            eps,
+            tipoSanguinio,
+            rh,
+            genero,
+            IdePadre,
+            correoPadre,
+            telPadre,
+            nomPadre,
+            nomMadre,
+            ideMadre,
+            correoMadre,
+            telMadre,
+            NomAcu,  	
+            IdeAcu,
+            fechaNacAcu,
+            telAcu,
+            direccionAcu
+        })
+        .then(res=>{
+            console.log(res);
+            console.log(res.data);
+            window.location = "/user_type"
+        })
+      }, [])
+
+    
 	
     return(
         <>
